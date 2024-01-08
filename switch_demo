@@ -1,0 +1,113 @@
+import java.util.Scanner;
+package firstproject;
+
+public class switch1 {
+
+	public static void main(String[] args) {
+  
+int choice;
+Scanner sc=new Scanner(System.in);
+System.out.println("1:no is even or odd \n2:grade of 5 subjects \nfind the cube \nfind out the greatest ");
+choice=sc.nextInt();
+switch(choice)
+{
+case 1:
+	int num;
+	System.out.println("Enter a number");
+	num=sc.nextInt();
+
+	if(num%2==0)
+	System.out.println("no is even");
+	
+	
+}
+else 
+{
+	System.out.println("no is odd");
+}
+break;
+case 2:
+	char grade;
+	System.out.println("Enter the mark of ele:");
+	int ele=sc.nextInt();
+	System.out.println("Enter the mark of math:");
+	int math=sc.nextInt();
+	System.out.println("Enter the mark of sci:");
+	int sci=sc.nextInt();
+	System.out.println("Enter the mark of hindi:");
+	int hin=sc.nextInt();
+	System.out.println("Enter the mark of english:");
+	int eng=sc.nextInt();
+	double per,total;
+	total=(ele+math+sci+hin+eng);
+	per=total/5;
+	System.out.println("total marks:"+total);
+	if(per>=70);
+ System.out.println("Grade :A");
+ if(per>=60)
+	 System.out.println("Grade: B");
+ else if(per>=50)
+	 System.out.println("Grade: c");
+ else if(per>=40)
+	 System.out.println("Grade:pass");
+ else
+	 System.out.println("Grade:Fail");
+ break;
+case 3:
+	int res=0;
+	System.out.println("enter number:");
+	int n=sc.nextInt();
+	if(n%5==0)
+	{
+		{
+			res=n*n*n;
+			
+		}
+
+	System.out.println("cube is:+res");
+	
+	}
+	else
+	{
+		System.out.println("no is not divisible by 5");
+		
+	}
+	break;
+case 4:
+	int m1,m2,m3;
+	System.out.println("Enter the value of m1:");
+	m1=sc.nextInt();
+	System.out.println("Enter the value of m2:");
+	m2=sc.nextInt();
+	System.out.println("Enter the value of m2:");
+	m3=sc.nextInt();
+	if(m1>m2 && m1>m3)
+	{
+		System.out.println("m1 is greater");
+	}
+		else if{
+			(m2>m1 && m3>m2)
+			System.out.println("m2 is greater");
+		}
+		else if{
+			(m3>m1 && m3>m2)
+			System.out.println("m3 is greater");
+
+
+		}
+	
+		else {
+			System.out.println("invalid");
+
+	
+	
+	}
+	}
+}
+
+
+
+
+}
+
+}
